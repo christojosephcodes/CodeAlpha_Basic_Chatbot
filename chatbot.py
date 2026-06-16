@@ -19,7 +19,7 @@ def get_response(user_input):
     responses = {
         ("hello", "hi", "hey", "yo"): "👋 Hi there! Super glad you dropped by. How can I help you today?",
         ("how are you", "how's it going", "sup"): "⚡ I'm running at 100% efficiency! Thanks for checking in.",
-        ("what is your name", "who are you", "identity"): "🤖 I am the CodeAlpha Advanced Rule-Based Chatbot, built entirely in Python!",
+        ("what is your name", "who are you", "identity"): "🤖 I am the CodeAlpha Advanced Rule-Based Chatbot, built  by Christo Joseph E. entirely in Python!",
         ("help", "commands", "what can you do"): "📋 You can chat with me naturally, ask me for a 'joke', ask for 'time', ask for 'date', or type 'bye' to exit!",
         ("bye", "goodbye", "exit", "quit"): "🚀 Mission complete. Goodbye! Have an absolutely spectacular day!"
     }
