@@ -45,12 +45,12 @@ def get_response(user_input):
         ]
         return f"🃏 {random.choice(joke_pool)}"
         
-    # 3. Dynamic Local Clock Logic
+    # 3. Dynamic Local Clock Logic (Forced IST for Cloud Servers)
     elif user_input in ["time", "clock"]:
         local_time = datetime.now(ZoneInfo("Asia/Kolkata"))
         return f"⏰ System time check: The current local time is {local_time.strftime('%I:%M:%S %p')}."
         
-    # 4. Dynamic Local Calendar Logic
+    # 4. Dynamic Local Calendar Logic (Forced IST for Cloud Servers)
     elif user_input in ["date", "calendar"]:
         local_time = datetime.now(ZoneInfo("Asia/Kolkata"))
         return f"📅 System date check: Today's date is {local_time.strftime('%d-%m-%Y')}."
@@ -79,7 +79,7 @@ def main():
         sys.stdout.write("\r" + " " * 20 + "\r")
         sys.stdout.flush()
         
-        # Display response text cleanly
+        # Display response text cleanly with typing delay
         sys.stdout.write("🤖 Bot ➜ ")
         typing_effect(response, speed=0.015)
         print() 
